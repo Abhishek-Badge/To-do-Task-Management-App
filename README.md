@@ -3,7 +3,8 @@
 A simple and elegant to-do list app built with vanilla JavaScript, HTML, and CSS. Add, edit, delete, and complete tasks with smooth animations and persistent storage.
 
 ## 🚀 Live Demo
-[Click to view the app](https://your-username.github.io/todo-app-vanilla-js/)
+
+[Click here to view the app](https://Abhishek-Badge.github.io/)
 
 ## ✨ Features
 - Add tasks with due dates and color tags
@@ -18,6 +19,5 @@ A simple and elegant to-do list app built with vanilla JavaScript, HTML, and CSS
 - JavaScript (ES6)
 
 ## 📸 Screenshots
-![To-do APP ScreenShot](./public/to-do.PNG)
-
+![To-do APP Screenshot](https://github.com/Abhishek-Badge/ToDo-App/blob/main/public/to-do.PNG?raw=true)
 ## 📂 Project Structure
