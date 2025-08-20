@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Palette</title>
+    <link rel="stylesheet" href="./home.css" />
+</head>
+
+<body>
+    <main class="app">
+        <header class="app__header">
+            <h1 class="app__title">Task Palette</h1>
+            <p class="app__subtitle">
+                Colorful cards for your day—add, edit, delete, complete, and everything stays in your browser.
+            </p>
+        </header>
+
+        <section class="composer">
+            <form id="taskForm" autocomplete="off">
+                <div class="field">
+                    <label for="title">Task</label>
+                    <input id="title" name="title" type="text" placeholder="What’s next?" required />
+                </div>
+
+                <div class="field">
+                    <label for="due">Due date</label>
+                    <input id="due" name="due" type="date" />
+                </div>
+
+                <div class="field">
+                    <label for="color">Color</label>
+                    <select id="color" name="color">
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                        <option value="amber">Amber</option>
+                        <option value="pink">Pink</option>
+                        <option value="purple">Purple</option>
+                        <option value="teal">Teal</option>
+                    </select>
+                </div>
+
+                <div class="composer__actions">
+                    <button class="btn btn--primary" type="submit" id="submitBtn">Add Task</button>
+                    <button class="btn btn--secondary" type="button" id="cancelBtn" hidden>Cancel</button>
+                    <button class="btn btn--secondary" type="button" id="resetBtn">Reset Form</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="grid" id="grid" aria-live="polite"></section>
+
+        <footer class="app__footer">
+            <small>Saved locally • No internet needed</small>
+        </footer>
+    </main>
+
+    <script src="./home.js" defer></script>
+</body>
+
+</html>

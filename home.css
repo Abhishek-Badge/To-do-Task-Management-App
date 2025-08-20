@@ -1,0 +1,215 @@
+:root {
+    --blue: #2196f3;
+    --green: #4caf50;
+    --amber: #ffc107;
+    --pink: #e91e63;
+    --purple: #9c27b0;
+    --teal: #009688;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #f9f9f9;
+    animation: pageFade 0.6s ease-in;
+}
+
+@keyframes pageFade {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.app {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.app__header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.app__title {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.app__subtitle {
+    margin: .5rem 0 0;
+    color: #555;
+}
+
+/* Composer */
+.composer .field {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.composer label {
+    font-weight: bold;
+    margin-bottom: .3rem;
+}
+
+.composer input,
+.composer select {
+    padding: .5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.composer__actions {
+    display: flex;
+    gap: .5rem;
+    margin-top: 1rem;
+}
+
+.btn {
+    padding: .6rem 1.2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn--primary {
+    background: var(--blue);
+    color: #fff;
+}
+
+.btn--secondary {
+    background: #e0e0e0;
+    color: #333;
+}
+
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* Card & animation */
+.card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeIn 0.4s ease-out forwards;
+    transform-origin: top center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card__title {
+    margin: 0 0 .5rem 0;
+    font-size: 1.1rem;
+}
+
+.card__due {
+    margin: 0;
+    font-size: .9rem;
+    color: #555;
+}
+
+/* Color borders */
+.card--blue {
+    border-left: 4px solid var(--blue);
+}
+
+.card--green {
+    border-left: 4px solid var(--green);
+}
+
+.card--amber {
+    border-left: 4px solid var(--amber);
+}
+
+.card--pink {
+    border-left: 4px solid var(--pink);
+}
+
+.card--purple {
+    border-left: 4px solid var(--purple);
+}
+
+.card--teal {
+    border-left: 4px solid var(--teal);
+}
+
+/* Completed task */
+.card--completed {
+    opacity: 0.6;
+    text-decoration: line-through;
+}
+
+/* Card actions */
+.card__actions {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    display: flex;
+    gap: .3rem;
+}
+
+.btn--icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    padding: .2rem;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.btn--icon:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+/* Checkbox */
+.card__checkbox {
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+    transform: scale(1.2);
+}
+
+/* Footer */
+.app__footer {
+    text-align: center;
+    margin-top: 2rem;
+    color: #777;
+}
