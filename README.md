@@ -4,7 +4,7 @@ A simple and elegant to-do list app built with vanilla JavaScript, HTML, and CSS
 
 ## 🚀 Live Demo
 
-[Click here to view the app](https://Abhishek-Badge.github.io/)
+[Click here to view the app](https://abhishek-badge.github.io/To-do-Task-Management-App/)
 
 ## ✨ Features
 - Add tasks with due dates and color tags
